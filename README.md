@@ -98,7 +98,7 @@ All parameters are centralized — easy to tune:
 
 ---
 
-## 📈 Performance Metrics
+##  Performance Metrics
 
 The system reports:
 
@@ -111,7 +111,7 @@ The system reports:
 
 ---
 
-## 🔬 Results
+##  Results
 
 The strategy is benchmarked against:
 - **SPY Buy & Hold**
