@@ -154,10 +154,10 @@ def main():
         save_path=os.path.join(config.RESULTS_DIR, "performance_summary.png"),
     )
 
-    print(f"\n✅ Done! All results saved to ./{config.RESULTS_DIR}/")
+    print(f"\n Done! All results saved to ./{config.RESULTS_DIR}/")
     print("\nFiles generated:")
     for f in sorted(os.listdir(config.RESULTS_DIR)):
-        print(f"  📊 results/{f}")
+        print(f"   results/{f}")
 
 
 if __name__ == "__main__":
