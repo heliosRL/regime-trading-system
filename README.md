@@ -16,7 +16,7 @@ The hypothesis: regime-filtering significantly improves Sharpe ratio and reduces
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 regime_trading/
@@ -59,7 +59,7 @@ Results and charts will be saved to the `results/` folder.
 
 ---
 
-## ⚙️ Configuration (`config.py`)
+##  Configuration (`config.py`)
 
 All parameters are centralized — easy to tune:
 
