@@ -138,7 +138,7 @@ Ideas to extend this work:
 
 ---
 
-## 📚 References
+## References
 
 - Asness, C. et al. (2013). *Value and Momentum Everywhere*. Journal of Finance.
 - Ang, A. & Bekaert, G. (2002). *Regime Switches in Interest Rates*. JBES.
