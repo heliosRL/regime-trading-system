@@ -76,22 +76,22 @@ All parameters are centralized — easy to tune:
 
 ## Strategy Logic
 
-### Step 1 — Regime Detection (HMM)
+### Step 1 Regime Detection (HMM)
 - Features: rolling returns, rolling volatility, rolling skewness
 - HMM trained on SPY to classify each day as **Risk-On** or **Risk-Off**
 - Risk-Off regime suppresses long signals (protects against trend breakdowns)
 
-### Step 2 — Momentum Signal
+### Step 2 Momentum Signal
 - Cross-sectional momentum: rank assets by past 63-day return
 - Long top-ranked assets, flat (or short) bottom-ranked assets
 - Signal is filtered to zero in Risk-Off regimes
 
-### Step 3 — Volatility Scaling
+### Step 3 Volatility Scaling
 - Each asset's position is scaled so its contribution to portfolio volatility equals `VOL_TARGET / N_ASSETS`
 - Uses 21-day realized volatility as the scaling denominator
 - Ensures consistent risk exposure regardless of market conditions
 
-### Step 4 — Execution & Backtesting
+### Step 4 Execution & Backtesting
 - Daily rebalancing with transaction costs (10 bps per trade)
 - Vectorized backtest engine — no lookahead bias
 - Benchmarked against buy-and-hold SPY
