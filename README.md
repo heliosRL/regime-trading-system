@@ -1,22 +1,22 @@
-#  Regime-Filtered Momentum Trading System
+# Regime-Filtered Momentum Trading System
 
-A systematic trading strategy that combines HIDDEN MARKOV MODEL (HMM) REGIME DETECTION with MOMENTUM SIGNALS and VOLATILITY-SCALED POSITION SIZING to generate robust risk-adjusted returns.
+A systematic trading strategy that combines **Hidden Markov Model (HMM) regime detection** with **momentum signals** and **volatility-scaled position sizing** to generate robust risk-adjusted returns.
 
 ---
 
-##  Core Idea
+## Core Idea
 
 Raw momentum strategies suffer during market regime transitions — they tend to perform well in trending markets but break down during high-volatility or mean-reverting regimes. This project addresses that by:
 
-1. DETECTING MARKET REGIMES using a Hidden Markov Model on returns + volatility features
-2. FILTERING MOMENTUM TRADES — only entering positions when the detected regime is favorable
-3. SCALING POSITION SIZES inversely to realized volatility (volatility targeting) to maintain consistent risk exposure
+1. **Detecting market regimes** using a Hidden Markov Model on returns + volatility features
+2. **Filtering momentum trades** — only entering positions when the detected regime is favorable
+3. **Scaling position sizes** inversely to realized volatility (volatility targeting) to maintain consistent risk exposure
 
 The hypothesis: regime-filtering significantly improves Sharpe ratio and reduces drawdown compared to naive momentum.
 
 ---
 
-##  Project Structure
+## Project Structure
 
 ```
 regime_trading/
@@ -45,7 +45,7 @@ regime_trading/
 
 ---
 
-##  Quickstart
+## Quickstart
 
 ```bash
 # 1. Install dependencies
@@ -59,7 +59,7 @@ Results and charts will be saved to the `results/` folder.
 
 ---
 
-##  Configuration (`config.py`)
+## Configuration (`config.py`)
 
 All parameters are centralized — easy to tune:
 
@@ -98,7 +98,7 @@ All parameters are centralized — easy to tune:
 
 ---
 
-##  Performance Metrics
+## Performance Metrics
 
 The system reports:
 
@@ -111,7 +111,7 @@ The system reports:
 
 ---
 
-##  Results
+## Results
 
 The strategy is benchmarked against:
 - **SPY Buy & Hold**
@@ -130,15 +130,15 @@ Charts saved to `results/`:
 ## Research Extensions
 
 Ideas to extend this work:
-- Replace HMM with a KALMAN FILTER for smoother regime estimates
-- Add CRYPTO ASSETS for cross-asset momentum
-- Use OPTIONS-IMPLIED VOLATILITY (VIX term structure) as an additional regime feature
-- Test SHORT-SELLING in Risk-Off regimes instead of going flat
-- Incorporate TRANSACTION-COST OPTIMIZATION (round-trip minimization)
+- Replace HMM with a **Kalman Filter** for smoother regime estimates
+- Add **crypto assets** for cross-asset momentum
+- Use **options-implied volatility** (VIX term structure) as an additional regime feature
+- Test **short-selling** in Risk-Off regimes instead of going flat
+- Incorporate **transaction cost optimization** (round-trip minimization)
 
 ---
 
-## References
+## 📚 References
 
 - Asness, C. et al. (2013). *Value and Momentum Everywhere*. Journal of Finance.
 - Ang, A. & Bekaert, G. (2002). *Regime Switches in Interest Rates*. JBES.
